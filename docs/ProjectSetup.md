@@ -1,7 +1,7 @@
 # Setting up your Litho project
 
 ![Banner image](Images/banner1.jpg)
-_Litho beta release 0.2.1 (22/07/2019)_
+_Litho beta release 0.3.0 (06/08/2019)_
 
 ## Contents
 

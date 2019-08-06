@@ -1,13 +1,21 @@
 # Litho SDK Changelog
 
 ![Banner image](Images/banner1.jpg)
-_Litho beta release 0.2.1 (22/07/2019)_
+_Litho beta release 0.3.0 (06/08/2019)_
 
 ## Contents
 
+* [0.3.0](#030)
 * [0.2.1](#021)
 * [0.2.0](#020)
 * [0.1.0](#010)
+
+#### 0.3.0
+
+* Major UI redesign
+* Add onboarding/ tutorial sequence
+* Auto-reconnect to disconnected devices
+* Remember and restore handedness and grip preferences
 
 #### 0.2.1
 

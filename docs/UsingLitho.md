@@ -1,7 +1,7 @@
 # Using Litho
 
 ![Banner image](Images/banner1.jpg)
-_Litho beta release 0.2.1 (22/07/2019)_
+_Litho beta release 0.3.0 (06/08/2019)_
 
 ## Contents
 
@@ -43,21 +43,21 @@ If you are **left-handed**, these instructions still apply, but you will need to
 
 ---
 
-## Litho interactions
+## Litho Interactions
 
 Litho interactions are usually performed by pointing at the object you want to interact with, then touching and holding your thumb on the touchpad surface. Certain objects can be moved by then pointing to a new location in the world. You should see the object follow to wherever you point.
 
-### Fine control
+### Fine Control
 
 More intricate movements, such as rotation and moving an object closer or further away depend on how you are [wearing Litho](#wearing-litho).
 
-### Point controls
+### Point Controls
 
 | ![Point Grip](Images/newhand/left/interact/point/dept.png) **Depth** | ![Point Grip](Images/newhand/interact/point/rotate.png) **Rotation** |
 | :--- | :--- |
 | While holding an object that can be moved, **tilt your Litho left and right** to control its distance from you. This motion can be made easier by orienting your hand at 45 degrees when first grabbing the object. | While holding an object that can be rotated, **slide your finger left and right** along the touchpad. The position of your finger maps to the yaw (horizontal-plane rotation) of the object you are holding. |
 
-### Clutch controls
+### Clutch Controls
 
 | ![Point Grip](Images/newhand/left/interact/clutch/dept.png) **Depth** | ![Clutch Grip](Images/newhand/interact/clutch/rotate.png) **Rotation** |
 |:--- | :--- |

@@ -1,6 +1,7 @@
 # Meet Litho
 
 ![Banner image](docs/Images/banner1.jpg)
+_Litho beta release 0.3.0 (06/08/2019)_
 
 This repo contains a Unity project with UX/UI templates for using Litho.
 
