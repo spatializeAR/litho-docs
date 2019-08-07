@@ -1,7 +1,7 @@
 # Scripting with Litho
 
 ![Banner image](Images/banner1.jpg)
-_Litho beta release 0.3.0 (06/08/2019)_
+_Litho beta release 0.3.1 (07/08/2019)_
 
 ## Contents
 
@@ -48,9 +48,9 @@ Below is a brief overview of the recommended augmented reality (AR) interaction 
 
 ### Litho SDK
 
-* **_Litho_** is managed entirely by the Litho SDK and should generally not be significantly modified (although changes to the properties exposed in the Unity editor can be useful). This object is explicitly moved through space by the _Litho_ script, and approximates the real-world position of your Litho device relative to the camera.
+* **_Litho_** is managed entirely by the Litho SDK and should generally not be significantly modified (although changes to the properties exposed in the Unity editor can be useful). This object is explicitly moved through space by the ```Litho``` script, and approximates the real-world position of your Litho device relative to the camera.
 
-    * **[_Transform_](https://docs.unity3d.com/ScriptReference/Transform.html)** locates your Litho device in Unity coordinates; values here will be **driven by the _Litho_ script**.
+    * **[_Transform_](https://docs.unity3d.com/ScriptReference/Transform.html)** locates your Litho device in Unity coordinates; values here will be **driven by the ```Litho``` script**.
 
     * **_Litho (Script)_** handles connection to your real-world Litho device, position the _Litho_ object relative to the provided _Camera_ Transform property (_ARCamera_), and processes [events](#litho-events) occurring on your Litho device.
 
@@ -94,69 +94,71 @@ Below is a brief overview of the recommended augmented reality (AR) interaction 
 
 Litho events are processed in two categories: 'global' and 'object-specific'.
 
-* **Global events** occur without any context of where the Litho is, what it is doing, or whether it is interacting with an object. Global events are processed and exposed by the _Litho_ script component, attached to the _Litho_ gameobject. They include touch events, which always occur when the Litho user interacts with the Litho touchpad, without reference to any other objects. Connection status and device information events are also global.
+* **Global events** occur without any context of where the Litho is, what it is doing, or whether it is interacting with an object. Global events are processed and exposed by the ```Litho``` script component, attached to the _Litho_ gameobject. They include touch events, which always occur when the Litho user interacts with the Litho touchpad, without reference to any other objects. Connection status and device information events are also global.
 
-    Global events are implemented by the _Litho_ script as [conventional C# events](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/index).
+    Global events are implemented by the ```Litho``` script as [conventional C# events](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/index).
 
-* **Object-specific events** occur on specific objects as the Litho pointer (managed by the _Pointer_ script) interacts with them. These transmit the information about the Litho touch interactions to the object that is being interacted with. Interactable objects can then use this information to modify their own behaviour based on how the pointer interacts with them.
+* **Object-specific events** occur on specific objects as the Litho pointer (managed by the ```Pointer``` script) interacts with them. These transmit the information about the Litho touch interactions to the object that is being interacted with. Interactable objects can then use this information to modify their own behaviour based on how the pointer interacts with them.
 
     Object-specific events are implemented by the _InteractableObject_ script as [UnityEvents](https://docs.unity3d.com/ScriptReference/Events.UnityEvent.html), which work slightly differently, and can additionally be accessed from the Unity Editor Inspector window.
 
 **Note:** Litho touch events may occur globally _and_ locally
 
-An example of subscribing to global Litho events (with code) can be found [here](UnityIntegration#demo-event-object).
+An example of subscribing to global Litho events (with code) can be found [here](UnityIntegration.md#demo-event-object).
 
 #### List of Global Litho Events
 
 ##### Litho Connection Status Events:
 
-* **_OnDeviceFound(string deviceName)_** is called when a Litho device is discovered via Bluetooth.
+* **_```OnDeviceFound(string deviceName)```_** is called when a Litho device is discovered via Bluetooth.
 
-* **_OnConnected(string deviceName)_** is called when a Litho device is connected to via Bluetooth.
+* **_```OnConnected(string deviceName)```_** is called when a Litho device is connected to via Bluetooth.
 
-* **_OnConnectionFailed(string deviceName)_** is called when an attempt is made to connect to a Litho device via Bluetooth, but it fails.
+* **_```OnConnectionFailed(string deviceName)```_** is called when an attempt is made to connect to a Litho device via Bluetooth, but it fails.
 
-* **_OnDisconnected(string deviceName)_** is called when a Litho device is disconnected.
+* **_```OnDisconnected(string deviceName)```_** is called when a Litho device is disconnected.
 
 ##### Litho Device Info Events:
 
-* **_OnBatteryLevelReceived(int batteryLevel)_** is called when the connected Litho device reports its battery level (which occurs on connection and periodically whilst connected).
+* **_```OnBatteryLevelReceived(int batteryLevel)```_** is called when the connected Litho device reports its battery level (which occurs on connection and periodically whilst connected).
 
-* **_OnFirmwareVersionReceived(string deviceInfo)_** is called when the connected Litho device reports its firmware version (which occurs on connection and when requested via the _Litho -> Get Info_ menu option in the Unity Editor.
+* **_```OnFirmwareVersionReceived(string deviceInfo)```_** is called when the connected Litho device reports its firmware version (which occurs on connection and when requested via the _Litho -> Get Info_ menu option in the Unity Editor.
 
-* **_OnHardwareVersionReceived(string deviceInfo)_** is called when the connected Litho device reports its hardware version (which occurs on connection and when requested via the _Litho -> Get Info_ menu option in the Unity Editor).
+* **_```OnHardwareVersionReceived(string deviceInfo)```_** is called when the connected Litho device reports its hardware version (which occurs on connection and when requested via the _Litho -> Get Info_ menu option in the Unity Editor).
 
-* **_OnModelNumberReceived(string deviceInfo)_** is called when the connected Litho device reports its model number (which occurs on connection and when requested via the _Litho -> Get Info_ menu option in the Unity Editor).
+* **_```OnModelNumberReceived(string deviceInfo)```_** is called when the connected Litho device reports its model number (which occurs on connection and when requested via the _Litho -> Get Info_ menu option in the Unity Editor).
 
 ##### Litho Touch Events:
 
-* **_OnTouchStart([Vector2 position, Vector2 worldPosition](#touch-event-notes))_** is called when the thumb first makes contact with the touchpad (of the connected Litho device).
+See [notes on ```position``` versus ```worldPosition```](#touch-event-notes).
 
-* **_OnTouchMove([Vector2 position, Vector2 worldPosition](#touch-event-notes))_** is called for every frame between the start and end of a touch (on the connected Litho device), providing updated touch position information.
+* **_```OnTouchStart(Vector2 position, Vector2 worldPosition)```_** is called when the thumb first makes contact with the touchpad (of the connected Litho device).
 
-* **_OnTouchEnd([Vector2 position, Vector2 worldPosition](#touch-event-notes))_** is called when the thumb loses contact with the touchpad (of the connected Litho device).
+* **_```OnTouchMove(Vector2 position, Vector2 worldPosition)```_** is called for every frame between the start and end of a touch (on the connected Litho device), providing updated touch position information.
 
-* **_OnTap([Vector2 position, Vector2 worldPosition](#touch-event-notes))_** is called when the thumb loses contact with the trackpad (of the connected Litho device) a fraction of a second after it initially makes contact.
+* **_```OnTouchEnd(Vector2 position, Vector2 worldPosition)```_** is called when the thumb loses contact with the touchpad (of the connected Litho device).
 
-* **_OnTouchAndHold([Vector2 position, Vector2 worldPosition](#touch-event-notes))_** is called once per frame after the thumb remains on the trackpad and does not move within a fraction of a second of making contact; after that fraction of a second, the thumb may move around whilst still producing the touch-and-hold event.
+* **_```OnTap(Vector2 position, Vector2 worldPosition)```_** is called when the thumb loses contact with the trackpad (of the connected Litho device) a fraction of a second after it initially makes contact.
+
+* **_```OnTouchAndHold(Vector2 position, Vector2 worldPosition)```_** is called once per frame after the thumb remains on the trackpad and does not move within a fraction of a second of making contact; after that fraction of a second, the thumb may move around whilst still producing the touch-and-hold event.
 
 #### List of Object-Specific Litho Events
 
-* **_OnPointerEnter()_** is called when the pointer starts pointing at the object this script is attached to.
+* **_```OnPointerEnter()```_** is called when the pointer starts pointing at the object this ```Selectable``` script is attached to.
 
-* **_OnPointerExit()_** is called when the pointer stops pointing at the object this script is attached to and has also released this object if it was being held.
+* **_```OnPointerExit()```_** is called when the pointer stops pointing at the object this ```Selectable``` script is attached to and has also released this object if it was being held.
 
-* **_OnPointerGrab()_** is called when a touch on the Litho touchpad starts whilst the pointer is pointing at the object this script is attached to.
+* **_```OnPointerGrab()```_** is called when a touch on the Litho touchpad starts whilst the pointer is pointing at the object this ```Selectable``` script is attached to.
 
-* **_OnPointerRelease()_** is called when a touch on the Litho touchpad ends whilst the object this script is attached to is being grabbed by the pointer.
+* **_```OnPointerRelease()```_** is called when a touch on the Litho touchpad ends whilst the object this ```Selectable``` script is attached to is being grabbed by the pointer.
 
 #### Touch Event Notes
 
 Litho touch events provide two parameter values for touch positions. It is important to use the correct value in order to provide the same experience to left- and right-handed users. In the future, these positions might remap the touch coordinates to account for different [Litho grips](UsingLitho.md#litho-grips).
 
-* **_position_** - represents the position of the touch **relative to the hand** (i.e. swiping towards the palm will produce the same sequence of values for both left- and right-handed users). Use this value for interactions that are **not spatially-aligned** with the world, such as **scaling objects**.
+* **_```position```_** - represents the position of the touch **relative to the hand** (i.e. swiping towards the palm will produce the same sequence of values for both left- and right-handed users). Use this value for interactions that are **not spatially-aligned** with the world, such as **scaling objects**.
 
-* **_worldPosition_** - represents the position of the touch **relative to the world** (i.e. swiping from right to left will produce the same sequence of values for both left- and right-handed users). Use this value for interactions that are **spatially-aligned** with the world, such as **scrolling a menu left or right**.
+* **_```worldPosition```_** - represents the position of the touch **relative to the world** (i.e. swiping from right to left will produce the same sequence of values for both left- and right-handed users). Use this value for interactions that are **spatially-aligned** with the world, such as **scrolling a menu left or right**.
 
 ---
 

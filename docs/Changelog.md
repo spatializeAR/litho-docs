@@ -1,14 +1,19 @@
 # Litho SDK Changelog
 
 ![Banner image](Images/banner1.jpg)
-_Litho beta release 0.3.0 (06/08/2019)_
+_Litho beta release 0.3.1 (07/08/2019)_
 
 ## Contents
 
+* [0.3.1](#031)
 * [0.3.0](#030)
 * [0.2.1](#021)
 * [0.2.0](#020)
 * [0.1.0](#010)
+
+#### 0.3.1
+
+* Improve backwards compatibility
 
 #### 0.3.0
 

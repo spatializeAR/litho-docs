@@ -1,6 +1,7 @@
 # Integrate Litho into your Unity scene
+
 ![Banner image](Images/banner1.jpg)
-_Litho beta release 0.3.0 (06/08/2019)_
+_Litho beta release 0.3.1 (07/08/2019)_
 
 ## Contents
 
