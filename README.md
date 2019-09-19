@@ -1,33 +1,45 @@
 # Meet Litho
 
-![Banner image](docs/Images/banner1.jpg)
-_Litho beta release 0.3.1 (07/08/2019)_
+[![Banner image](Images/banner.jpg)](#)
+_Litho beta release 0.4.0 (19/09/2019)_
 
-This repo contains a Unity project with UX/UI templates for using Litho.
+**To download the latest package please login to the [Litho Hub](https://developer.litho.cc/).**
+
+When you purchase a LITHO your login details will be sent to the purchase email you provide within 24hrs. If you haven't purchased a LITHO yet, you can buy one [here](https://www.litho.cc/buy)!
+
+# SDK Features
+ |[![](Images/Features/Laser.png)](#)[](Features/README.md)  [**Laser Pointer**](Features/README.md)| [![](Images/Features/Manipulate.png)](#)[](Features/README.md) [**Object Manipulation**](Features/README.md)| [![](Images/Features/Haptics.png)](#)[](Features/README.md) [**Haptic Feedback**](Features/README.md)| [![](Images/Features/TouchInput.png)](#)[](Features/README.md) [**Touch Pad**](Features/README.md)|
+ | :--- | :--- | :--- | :--- |
+ |[![](Images/Features/CleanUI.png)](#)[](Features/README.md) [**Clean UI**](Features/README.md)| [![](Images/Features/SpatialUI2.png)](#)[](Features/README.md) [**Spatial Menu**](Features/README.md)| [![](Images/Features/Emulator.png)](#)[](Features/README.md) [**Litho Emulator**](Features/README.md)| [![](Images/Icons/Blank.png)](#)[](Features/README.md)|
+
+ ---
 
 # Required software & hardware
+| | | |
+| :--- | :--- | :--- |
+ |[![Litho](Images/Icons/litho.png)](#) **Litho Device**| [![iOS](Images/Icons/ios.png)](#) **iPhone with iOS 12**| [![Android](Images/Icons/Android.png)](#) **Android 7+ <span style="color:red">*(experimental)*</span>** |
+| You need a Litho device running the latest firmware. If you don't have a Litho you can purchase one [here](https://www.litho.cc/buy). | Litho uses Apple's ARKit 2.0 and is supported on iOS devices running at version 12.2 or higher.| Litho uses Google’s AR Core and is supported on Android 7 or above, have a look [here](https://developers.google.com/ar/discover/supported-devices) for a more detailed list with devices.  |
+|[![Unity](Images/Icons/unity.png)](#) **Unity 2019.1**|[![MacOS 10.14+](Images/Icons/macos.png)](#)**MacOS 10.14+** | [![Windows](Images/Icons/windows.png)](#) **Windows <span style="color:red">*(experimental)*</span>**| 
+|Litho is currently tested on Unity 2019.1, which can be downloaded [here.](https://unity3d.com/get-unity/download/archive) | Developing with Litho is currently only supported on MacOS, with Xcode version 10.2 and above.| On Windows Bluetooth is not yet supported. It is however possible to develop and build your projects using the [emulator](Features/LithoEmulator.md) in the Unity editor.|
+---
 
- |![Litho](docs/Images/Icons/litho.png)[]() **Litho Device**| ![iOS](docs/Images/Icons/ios.png)[]() **iPhone with iOS 12**| ![MacOS 10.14+](docs/Images/Icons/macos.png)[]()**MacOS 10.14+**|![Unity](docs/Images/Icons/unity.png)[]() **Unity 2019.1.6f**| 
-| :--- | :--- | :--- | :--- |
-| You need a Litho device running the latest firmware. If you don't have a Litho you can request to purchase one [here](mailto:support@litho.cc). | Litho uses Apple's ARKit 2.0 and is supported on iOS devices running at version 12.2 or higher.| Developing with Litho is currently only supported on MacOS, with Xcode version 10.2 and above. | Litho is currently tested on Unity 2019.1.6f. which can be downloaded [here.](https://unity3d.com/get-unity/download/archive)|
+# Getting started with the Litho SDK
 
-# Getting started with Litho
+[Set up your Litho project](Manual/ProjectSetup.md)
 
-[Guide to using Litho](docs/UsingLitho.md)
+[Learn how the Litho demo scene works](Manual/DemoScene.md)
 
-[Setting up your Litho project](docs/ProjectSetup.md)
+[Build your scene for iOS or Android](Manual/BuildInstructions.md)
 
-[Learn how the Litho demo scene works](docs/DemoScene.md)
+[Integrate Litho into your Unity scene](Manual/UnityIntegration.md)
 
-[Build your scene for iOS using Xcode](docs/BuildXcode.md)
+[Code your own Litho scripts](Manual/UnityScripting.md)
 
-[Integrate Litho into your Unity scene](docs/UnityIntegration.md)
+[Test your scene using the Litho Emulator](Features/LithoEmulator.md)
 
-[Best practice for coding your own scripts with Litho](docs/UnityScripting.md)
+[FAQs & Troubleshooting](Manual/FAQ.md)
 
-[FAQs & Troubleshooting](docs/FAQ.md)
-
-[Changelog](docs/Changelog.md)
+[Changelog](Changelog.md)
 
 ---
 
