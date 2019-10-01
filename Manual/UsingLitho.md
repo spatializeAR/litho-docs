@@ -1,7 +1,7 @@
 # Using Litho
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.0 (19/09/2019)_
+_Litho beta release 0.4.1 (30/09/2019)_
 
 ## Contents
 

@@ -1,7 +1,7 @@
 # Learn how the Litho demo scene works
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.0 (19/09/2019)_
+_Litho beta release 0.4.1 (30/09/2019)_
 
 ## Contents
 
@@ -49,7 +49,9 @@ Watch the setup tutorial on Vimeo</a>
     3. In the Unity Editor menu bar press _LITHO -> Calibrate_
 
 6. You should now be able to **see the laser pointer** protruding from the _Litho_ object, which should be tracking your real-world Litho position and orientation relative to the _ARCamera_ object
+
 7. By **pointing at the cube** in the game world, and **touching and holding the touchpad** on the bottom of your Litho, you should be able to **manipulate the cube** in 3D space. Whilst holding in [Point grip](UsingLitho.md#litho-grips), twist your wrist left and right to move the cube along the axis of the pointer
+
 8. When finished, click the _Play_ button again to **stop the scene** (the _Play_ button should return to its unpressed state)
 
 ---

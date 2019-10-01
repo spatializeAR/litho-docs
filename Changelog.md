@@ -1,10 +1,11 @@
 # Litho SDK Changelog
 
 [![Banner image](Images/banner.jpg)](#)
-_Litho beta release 0.4.0 (19/09/2019)_
+_Litho beta release 0.4.1 (30/09/2019)_
 
 ## Contents
 
+* [0.4.1](#041) | *30/09/2019*
 * [0.4.0](#040) | *19/09/2019*
 * [0.3.1](#031) | *07/08/2019*
 * [0.3.0](#030) | *06/08/2019*
@@ -12,9 +13,15 @@ _Litho beta release 0.4.0 (19/09/2019)_
 * [0.2.0](#020) | *05/07/2019*
 * [0.1.0](#010) | *17/06/2019*
 
+#### 0.4.1
+
+* Add autoconnect to favourite Litho device
+* Only run onboarding once (until requested)
+* Fix minor UI bug
+
 #### 0.4.0
 
-* Add [Litho hardware emulator](Features/LithoEmulator.md)
+* Add [Litho emulator](Features/LithoEmulator.md)
 * Add showcase scene
 * Major redesign of [interaction system](Manual/UnityScripting.md#basic-interaction-components)
 * Expose events for Manipulable objects
