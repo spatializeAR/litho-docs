@@ -1,7 +1,7 @@
 # Set up your Litho project
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.1 (30/09/2019)_
+_Litho beta release 0.4.2 (16/10/2019)_
 
 ## Contents
 
@@ -12,7 +12,7 @@ _Litho beta release 0.4.1 (30/09/2019)_
 
 ## Video tutorial
 
-<a href="https://vimeo.com/361262684" target="_blank">![Link to video](../Images/Icons/vimeo_small.png)
+<a href="https://vimeo.com/368558994" target="_blank">![Link to video](../Images/Icons/vimeo_small.png)
 
 Watch the setup tutorial on Vimeo</a>
 
@@ -38,28 +38,16 @@ Watch the setup tutorial on Vimeo</a>
 
 ---
 
-#### 2. (Option 1 - fresh install) Import the Litho Unity package into your Unity project:
+#### 2. Import the Litho Unity package into your Unity project:
 
-> Option 1 only applies if the project you are creating does not yet have the Litho package installed
+1. Locate the Litho SDK _.zip_ file (e.g. _litho-beta-2019-10-16-v0-4-2.zip_) - i.e. find it in your downloads folder, or download it if you have not done so already
+2. Unzip/ decompress the Litho SDK _.zip_ file
+3. Using Mac's Finder app or Windows Explore (in a new window), open the root folder of the Unity project you created for Litho
+4. Drag and drop the unzipped Litho package (e.g. _Litho_ or _litho-beta-2019-10-16-v0-4-2_; note **not** _.zip_) into the _Packages_ folder of your Unity project
+5. If you are upgrading your Litho SDK package from a previous version, you can now delete the old version (however Unity should automatically use the latest version)
+6. Return to your project in Unity - Unity will automatically install the Litho assets into your project; these assets can be found in the Unity _Project_ window, under _Litho Beta SDK_
 
-1. Locate the Litho SDK .zip file (e.g. _litho-beta-2019-09-30-v0-4-1.zip_)
-2. Choose a location on your file system to unzip/ decompress the zip file - this is where the Litho SDK files will live on your computer (the folder will be renamed to _Litho_ when decompressed)
-3. Open the Unity project you created for Litho
-4. In Unity, go to the Package Manager window
-5. Click the _+_ button at the top of the Package Manager window, then select _Add package from disk..._
-6. Select and open the file called _package.json_, which will be found inside the _Litho_ folder where you unzipped the SDK package
-[![Add package from disk](../Images/Editor/AddPackageFromDisk.png)](#)
-
-#### 2. (Option 2 - package upgrade) Replace the Litho Unity package in your Unity project:
-
-> Option 2 only applies if the project you are developing has another version of the Litho Beta SDK package installed already
-
-1. Locate the Litho SDK .zip file (e.g. _litho-beta-2019-09-30-v0-4-1.zip_)
-2. Decompress the Litho SDK .zip file somewhere (e.g. in your _Downloads_ folder)
-3. Find the location on your file system where the existing _Litho_ folder currently lives
-4. Replace the existing  _Litho_ folder with the freshly-decompressed _Litho_ folder
-5. Reopen/ refresh the Unity project - Unity Package Manager will then handle the package upgrade
-6. Note that, due to the beta status of the Litho SDK, certain package upgrades on projects that make heavy use of Litho may require some manual error correction - i.e. prefabs may have to be reconfigured to use new interaction mechanics
+[![Add package from disk](../Images/Editor/DropLithoPackageIntoPackages.png)](#)
 
 ---
 

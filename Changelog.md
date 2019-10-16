@@ -1,10 +1,11 @@
 # Litho SDK Changelog
 
 [![Banner image](Images/banner.jpg)](#)
-_Litho beta release 0.4.1 (30/09/2019)_
+_Litho beta release 0.4.2 (16/10/2019)_
 
 ## Contents
 
+* [0.4.2](#042) | *16/10/2019*
 * [0.4.1](#041) | *30/09/2019*
 * [0.4.0](#040) | *19/09/2019*
 * [0.3.1](#031) | *07/08/2019*
@@ -12,6 +13,12 @@ _Litho beta release 0.4.1 (30/09/2019)_
 * [0.2.1](#021) | *22/07/2019*
 * [0.2.0](#020) | *05/07/2019*
 * [0.1.0](#010) | *17/06/2019*
+
+#### 0.4.2
+
+* Improve device connection process
+* Simplify project setup automation
+* Fix minor Litho Emulator bug
 
 #### 0.4.1
 
