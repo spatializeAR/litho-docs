@@ -1,7 +1,7 @@
 # Test your scene using the Litho Emulator
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.2 (16/10/2019)_
+_Litho beta release 0.4.3 (28/10/2019)_
 
 ---
 
@@ -38,6 +38,8 @@ Click on the Unity Editor Game view using your computer mouse to activate the em
 
 # Navigation
 
+[Home](../README.md)
+
 [Litho Features](README.md)
 
 [Guide to using Litho](../Manual/UsingLitho.md)
@@ -52,9 +54,9 @@ Click on the Unity Editor Game view using your computer mouse to activate the em
 
 [Code your own Litho scripts](../Manual/UnityScripting.md)
 
-[Test your scene using the Litho Emulator](LithoEmulator.md)
+\> [Test your scene using the Litho Emulator](LithoEmulator.md)
 
-[FAQs & Troubleshooting](../Manual/FAQ.md)
+[FAQs & Troubleshooting](../FAQ.md)
 
 [Changelog](../Changelog.md)
 

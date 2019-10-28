@@ -1,7 +1,7 @@
 # Using Litho
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.2 (16/10/2019)_
+_Litho beta release 0.4.3 (28/10/2019)_
 
 ## Contents
 
@@ -64,11 +64,14 @@ More intricate movements such as rotation and moving an object closer or further
 | Whilst holding an object that can be moved, **slide your finger up and down** on the touchpad. | Whilst holding an object that can be rotated, gently **tilt your hand left or right** to control the yaw of the object |
 
 ---
+
 # Navigation
+
+[Home](../README.md)
 
 [Litho Features](../Features/README.md)
 
-[Guide to using Litho](UsingLitho.md)
+\> [Guide to using Litho](UsingLitho.md)
 
 [Set up your Litho project](ProjectSetup.md)
 
@@ -82,7 +85,7 @@ More intricate movements such as rotation and moving an object closer or further
 
 [Test your scene using the Litho Emulator](../Features/LithoEmulator.md)
 
-[FAQs & Troubleshooting](FAQ.md)
+[FAQs & Troubleshooting](../FAQ.md)
 
 [Changelog](../Changelog.md)
 

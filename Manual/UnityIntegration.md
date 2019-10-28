@@ -1,7 +1,7 @@
 # Integrate Litho into your Unity scene
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.2 (16/10/2019)_
+_Litho beta release 0.4.3 (28/10/2019)_
 
 ## Contents
 
@@ -99,6 +99,8 @@ The Showcase object collates a variety of interaction prefabs into a small platf
 
 # Navigation
 
+[Home](../README.md)
+
 [Litho Features](../Features/README.md)
 
 [Guide to using Litho](UsingLitho.md)
@@ -109,13 +111,13 @@ The Showcase object collates a variety of interaction prefabs into a small platf
 
 [Build your scene for iOS or Android](BuildInstructions.md)
 
-[Integrate Litho into your Unity scene](UnityIntegration.md)
+\> [Integrate Litho into your Unity scene](UnityIntegration.md)
 
 [Code your own Litho scripts](UnityScripting.md)
 
 [Test your scene using the Litho Emulator](../Features/LithoEmulator.md)
 
-[FAQs & Troubleshooting](FAQ.md)
+[FAQs & Troubleshooting](../FAQ.md)
 
 [Changelog](../Changelog.md)
 

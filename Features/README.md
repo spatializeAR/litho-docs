@@ -1,7 +1,7 @@
 # Litho Features
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.2 (16/10/2019)_
+_Litho beta release 0.4.3 (28/10/2019)_
 
 ## Contents
 
@@ -24,9 +24,12 @@ _Litho beta release 0.4.2 (16/10/2019)_
 | **[Litho Emulator](../Features/LithoEmulator.md)** [![Litho Emulator](../Images/Features/Emulator.png)](../Features/LithoEmulator.md)| You can now develop for Litho without connecting a device. The emulator lets you quickly test your designs in the Unity editor using your mouse and keyboard. This saves time and creates the possibility to develop with Litho without the need for an actual device.|
 
 ---
+
 # Navigation
 
-[Litho Features](README.md)
+[Home](../README.md)
+
+\> [Litho Features](README.md)
 
 [Guide to using Litho](../Manual/UsingLitho.md)
 
@@ -45,6 +48,5 @@ _Litho beta release 0.4.2 (16/10/2019)_
 [FAQs & Troubleshooting](../Manual/FAQ.md)
 
 [Changelog](../Changelog.md)
-
 
 ---

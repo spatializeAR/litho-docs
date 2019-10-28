@@ -1,7 +1,7 @@
 # Set up your Litho project
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.2 (16/10/2019)_
+_Litho beta release 0.4.3 (28/10/2019)_
 
 ## Contents
 
@@ -85,11 +85,13 @@ Watch the setup tutorial on Vimeo</a>
 
 # Navigation
 
+[Home](../README.md)
+
 [Litho Features](../Features/README.md)
 
 [Guide to using Litho](UsingLitho.md)
 
-[Set up your Litho project](ProjectSetup.md)
+\> [Set up your Litho project](ProjectSetup.md)
 
 [Learn how the Litho demo scene works](DemoScene.md)
 
@@ -101,7 +103,7 @@ Watch the setup tutorial on Vimeo</a>
 
 [Test your scene using the Litho Emulator](../Features/LithoEmulator.md)
 
-[FAQs & Troubleshooting](FAQ.md)
+[FAQs & Troubleshooting](../FAQ.md)
 
 [Changelog](../Changelog.md)
 

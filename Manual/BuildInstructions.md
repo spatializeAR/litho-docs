@@ -1,7 +1,7 @@
 # Build your scene for iOS using Xcode or directly for Android
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.2 (16/10/2019)_
+_Litho beta release 0.4.3 (28/10/2019)_
 
 ## Contents
 
@@ -58,6 +58,8 @@ If you have used additional libraries, you may need to modify build settings to 
 
 # Navigation
 
+[Home](../README.md)
+
 [Litho Features](../Features/README.md)
 
 [Guide to using Litho](UsingLitho.md)
@@ -66,7 +68,7 @@ If you have used additional libraries, you may need to modify build settings to 
 
 [Learn how the Litho demo scene works](DemoScene.md)
 
-[Build your scene for iOS or Android](BuildInstructions.md)
+\> [Build your scene for iOS or Android](BuildInstructions.md)
 
 [Integrate Litho into your Unity scene](UnityIntegration.md)
 
@@ -74,7 +76,8 @@ If you have used additional libraries, you may need to modify build settings to 
 
 [Test your scene using the Litho Emulator](../Features/LithoEmulator.md)
 
-[FAQs & Troubleshooting](FAQ.md)
+[FAQs & Troubleshooting](../FAQ.md)
 
 [Changelog](../Changelog.md)
+
 ---

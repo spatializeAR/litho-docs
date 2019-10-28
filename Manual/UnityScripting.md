@@ -1,7 +1,7 @@
 # Scripting with Litho
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.2 (16/10/2019)_
+_Litho beta release 0.4.3 (28/10/2019)_
 
 ## Contents
 
@@ -14,13 +14,13 @@ _Litho beta release 0.4.2 (16/10/2019)_
 
 ## Basic Interaction Components
 
+#### `Litho`
+
+This component acts as an interface between Litho hardware and Unity. It connects to Litho devices and forwards information about them to your Unity apps, via [Litho events](#litho_events). Note that the [Litho emulator](../Features/LithoEmulator.md) can also produce (fake) Litho events in response to your mouse interactions within the Unity Editor's Game view.
+
 #### `Manipulable`
 
-This component represents that the Unity GameObject it is attached to can be interacted with by the Litho interaction system. It has some basic properties (listed below) that modify how it works, as well as a [comprehensive range of events](#list-of-manipulable-events). This class is abstract (so cannot be attached to a GameObject) and is designed to be inherited from. Several Litho classes already inherited from `Manipulable`, and can be used as examples: [`Positionable`](#positionable), [`Movable`](#movable), [`Scalable`](#scalable), [`Rotatable`](#rotatable), [`Manipulable`](#manipulable), [`Hidable`](#hidable).
-
-> `Manipulable` components may be attached to objects in different configurations and with different targets to achieve different interactions - refer  to the _LithoShowcase_ scene for a variety of examples.
-
-`Manipulable` GameObjects must have at least one Unity `Collider` component attached to them or attached to one of their child GameObjects in order for a [`Manipulation`](#manipulation) to occur. Additionally, the `Collider`(s) must be assigned to a Unity physics layer that is not ignored by a given [`Manipulator`](#manipulator) in order for that [`Manipulator`](#manipulator) to interact with the `Manipulable`.
+This component represents that the Unity GameObject it is attached to can be interacted with by the Litho interaction system. It has some basic properties (listed below) that modify how it works, as well as a [comprehensive range of events](#list-of-manipulable-events).
 
 * **_Interactable_** determines whether this `Manipulable` object is currently responding to [`Manipulator`](#manipulator) interactions.
 
@@ -29,6 +29,12 @@ This component represents that the Unity GameObject it is attached to can be int
 * **_Grab Mode_** determines whether an interacting [`Manipulator`](#manipulator) grabs the target object or this `Manipulable` handle object.
 
 * **_Indicator Prefab_** determines which prefab to display near the object to indicate that this `Manipulable` is being interacted with.
+
+This component can be used to respond to [`Manipulator`](#manipulator) interactions directly, but it is designed to be inherited from. Several Litho classes already inherit from `Manipulable`, and can be used as examples: [`Positionable`](#positionable), [`Movable`](#movable), [`Scalable`](#scalable), [`Rotatable`](#rotatable), [`Selectable`](#selectable), [`Hidable`](#hidable).
+
+> `Manipulable` components may be attached to objects in different configurations and with different targets to achieve different interactions - refer  to the _LithoShowcase_ scene for a variety of examples.
+
+`Manipulable` GameObjects must have at least one Unity `Collider` component attached to them or attached to one of their child GameObjects in order for a [`Manipulation`](#manipulation) to occur. Additionally, the `Collider`(s) must be assigned to a Unity physics layer that is not ignored by a given [`Manipulator`](#manipulator) in order for that [`Manipulator`](#manipulator) to interact with the `Manipulable`.
 
 #### `Manipulator`
 
@@ -65,15 +71,7 @@ A reference to this component is passed along with each [`Manipulable`](#manipul
 
 ---
 
-## Interaction Components Used By Litho
-
-#### `Litho`
-
-This component acts as an interface between Litho hardware and Unity. It connects to Litho devices and forwards information about them to your Unity apps, via [Litho events](#litho_events). Note that the [Litho emulator](../Features/LithoEmulator.md) can also produce (fake) Litho events in response to your mouse interactions with the Unity Editor's Game view.
-
-#### `Pointer`
-
-A `Pointer` is a subclass of `LaserManipulator` (a long-range version of [`Manipulator`](#manipulator)). This component bridges the gap between the [`Litho`](#litho) and [`Manipulator`](#manipulator) classes. A `Pointer` uses events received from the Litho hardware (via the [`Litho`](#litho) component, which must be attached to the same object) to trigger its [`Manipulator`](#manipulator) actions.
+## Specific Types of [`Manipulable`](#manipulable) (Objects That Can Be Manipulated)
 
 #### `Positionable`
 
@@ -100,6 +98,8 @@ This component extends upon the functionality of [`Positionable`](#positionable)
 This component implements precise angular control of the target object about the given rotation axis - this is controlled by pointing left or right whilst grabbing this [`Manipulable`](#manipulable) GameObject (typically a parent GameObject). It can be attached to any GameObject (which will then act as the 'handle' of the rotation manipulation), and set to target any GameObject. `Rotatable` exposes the following properties in the Unity Inspector (in addition to those of [`Manipulable`](#manipulable)):
 
 * **_Sensitivity Factor_** determines how sensitive this [`Manipulable`](#manipulable) should be to [`Manipulator`](#manipulator) motion.
+
+* **_Rotation Axis_** determines which axis (local to the target) the rotation should occur around.
 
 [![Rotatable Component](../Images/Editor/RotatableComponent.png)](#)
 
@@ -137,9 +137,37 @@ This component can be attached to [`Manipulable`](#manipulable) objects in order
 
 ---
 
+## Specific Types of [`Manipulator`](#manipulator) (Components That Manipulate Other Objects)
+
+#### `Pointer`
+
+A `Pointer` is a subclass of `LaserManipulator` (a long-range version of [`Manipulator`](#manipulator)). This component bridges the gap between the [`Litho`](#litho) and [`Manipulator`](#manipulator) classes. A `Pointer` uses events received from the Litho hardware (via the [`Litho`](#litho) component, which must be attached to the same object) to trigger its [`Manipulator`](#manipulator) actions.
+
+#### `ItemHolder`
+
+An `ItemHolder` component extends the [`Manipulator`](#manipulator) class in order to implement automatic grabbing of [`Positionable`](#positionable)s that move into range. Note that the _Release Range_ of this component also represents the grab range.
+
+* **_Auto Grab_** determines whether to automatically grab new [`Positionable`](#positionable)s that move into the grab range.
+
+* **_Radius Offset Vector_** determines the direction in which to offset the position at which an object is held proprtionally to the radius of that held object.
+
+#### `ItemSpawner`
+
+An `ItemSpawner` component extends the [`Manipulator`](#manipulator) class in order to implement creation of new objects. This creation is triggered by another [`Manipulator`](#manipulator) (e.g. a [`Pointer`](#pointer)) grabbing the icon (which is generated by the `ItemSpawner`) and pulling it beyond the `ItemSpawner`'s _Release Range_.
+
+* **_Spawn Prefab_** determines which prefab to spawn when triggered.
+
+* **_Icon Container Prefab_** determines which prefab to use as a container for the generated icon (which is a miniature of the _Spawn Prefab_).
+
+* **_Spawn Parent_** determines which transform to place newly-spawned objects inside (i.e. as children of).
+
+* **_Spawn Prefab Scale Factor_** determines an additional scale factor for newly-spawned objects, relative to the _Spawn Prefab_'s natural `localscale` and the _Spawn Parent_'s scale.
+
+---
+
 ## Litho Events
 
->_If you are unfamiliar with C# events, you can read an overview [here](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/index) and get more detail on using events [here](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events)_
+>_If you are unfamiliar with C# events, you can read an overview [here](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/index) and get more detail on using events [here](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events)_.
 
 Litho events are processed in two categories: 'global' and 'object-specific'.
 
@@ -286,6 +314,8 @@ public class MyManipulableEventScript : MonoBehaviour
 
 # Navigation
 
+[Home](../README.md)
+
 [Litho Features](../Features/README.md)
 
 [Guide to using Litho](UsingLitho.md)
@@ -298,11 +328,11 @@ public class MyManipulableEventScript : MonoBehaviour
 
 [Integrate Litho into your Unity scene](UnityIntegration.md)
 
-[Code your own Litho scripts](UnityScripting.md)
+\> [Code your own Litho scripts](UnityScripting.md)
 
 [Test your scene using the Litho Emulator](../Features/LithoEmulator.md)
 
-[FAQs & Troubleshooting](FAQ.md)
+[FAQs & Troubleshooting](../FAQ.md)
 
 [Changelog](../Changelog.md)
 

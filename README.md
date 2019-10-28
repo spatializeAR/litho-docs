@@ -1,7 +1,7 @@
 # Meet Litho
 
 [![Banner image](Images/banner.jpg)](#)
-_Litho beta release 0.4.2 (16/10/2019)_
+_Litho beta release 0.4.3 (28/10/2019)_
 
 **To download the latest package please login to the [Litho Hub](https://developer.litho.cc/page/download-sdk/4).**
 
@@ -23,9 +23,16 @@ To quickly get started with SDK watch this [video](https://vimeo.com/368558994).
 | You need a Litho device running the latest firmware. If you don't have a Litho you can purchase one [here](https://www.litho.cc/buy). | Litho uses Apple's ARKit 2.0 and is supported on iOS devices running at version 12.2 or higher.| Litho uses Google’s AR Core and is supported on Android 7 or above, have a look [here](https://developers.google.com/ar/discover/supported-devices) for a more detailed list with devices.  |
 |[![Unity](Images/Icons/unity.png)](#) **Unity 2019.1**|[![MacOS 10.14+](Images/Icons/macos.png)](#)**MacOS 10.14+** | [![Windows](Images/Icons/windows.png)](#) **Windows <span style="color:red">*(experimental)*</span>**| 
 |Litho is currently tested on Unity 2019.1, which can be downloaded [here.](https://unity3d.com/get-unity/download/archive) | Developing with Litho is currently only supported on MacOS, with Xcode version 10.2 and above.| On Windows Bluetooth is not yet supported. It is however possible to develop and build your projects using the [emulator](Features/LithoEmulator.md) in the Unity editor.|
+
 ---
 
 # Getting started with the Litho SDK
+
+\> [Home](README.md)
+
+[Litho Features](Features/README.md)
+
+[Guide to using Litho](Manual/UsingLitho.md)
 
 [Set up your Litho project](Manual/ProjectSetup.md)
 
@@ -39,7 +46,7 @@ To quickly get started with SDK watch this [video](https://vimeo.com/368558994).
 
 [Test your scene using the Litho Emulator](Features/LithoEmulator.md)
 
-[FAQs & Troubleshooting](Manual/FAQ.md)
+[FAQs & Troubleshooting](FAQ.md)
 
 [Changelog](Changelog.md)
 

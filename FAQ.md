@@ -1,15 +1,15 @@
 # FAQs and Troubleshooting
 
-[![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.2 (16/10/2019)_
+[![Banner image](Images/banner.jpg)](#)
+_Litho beta release 0.4.3 (28/10/2019)_
 
 ## Contents
 
-* [Interaction](#Interaction)
-* [Connection](#Connection)
-* [AR](#AR)
-* [Development](#Development)
-* [Hardware](#Hardware)
+* [Interaction](#interaction)
+* [Connection](#connection)
+* [AR](#ar)
+* [Development](#development)
+* [Hardware](#hardware)
 
 ---
 
@@ -69,13 +69,13 @@ _Litho beta release 0.4.2 (16/10/2019)_
 
 #### Why can't I see the laser pointer?
 
-* Ensure you’re holding the device in the [grip](UsingLitho.md#wearing-litho) you have selected in the UI
-* Your Litho might not be calibrated, see the [calibration instructions](DemoScene.md#instructions-for-the-litho-example-scene)
+* Ensure you’re holding the device in the [grip](Manual/UsingLitho.md#wearing-litho) you have selected in the UI
+* Your Litho might not be calibrated, see the [calibration instructions](Manual/DemoScene.md#instructions-for-the-litho-example-scene)
 
 #### Why is my Litho laser pointer inverted?
 
-* You might be holding Litho the wrong way around, have a look at [how to wear Litho](UsingLitho.md#wearing-litho)
-* Ensure you’re holding the device in the [grip](UsingLitho.md#wearing-litho) you have selected in the UI
+* You might be holding Litho the wrong way around, have a look at [how to wear Litho](Manual/UsingLitho.md#wearing-litho)
+* Ensure you’re holding the device in the [grip](Manual/UsingLitho.md#wearing-litho) you have selected in the UI
 
 [_back to top_](#contents)
 
@@ -106,7 +106,7 @@ _Litho beta release 0.4.2 (16/10/2019)_
 
 * Ensure you calibrate your Litho while you’re holding your phone at head height. The Litho must be recalibrate to each individual user
 * Ensure the handedness option (in the menu/ UI) matches the hand you’re holding Litho in
-* Ensure you have scanned the ground plane before [calibrating](DemoScene.md#instructions-for-the-litho-example-scene)
+* Ensure you have scanned the ground plane before [calibrating](Manual/DemoScene.md#instructions-for-the-litho-example-scene)
 * Use your Litho as described in the using Litho video _(coming soon)_
 
 _(General improvements to the quality of our positional tracking in a wider range of scenarios will be released over the following months.)_
@@ -119,7 +119,7 @@ _(General improvements to the quality of our positional tracking in a wider rang
 
 #### Why is my Litho not connecting?
 
-* Ensure your Litho is [charged](Documentation/UsingLitho.md#charging-litho)
+* Ensure your Litho is [charged](Manual/Manual/UsingLitho.md#charging-litho)
 * Ensure your phone has Bluetooth enabled (check in phone settings)
 * Ensure your phone has permitted the Litho app to access Bluetooth (check in phone app settings)
 
@@ -154,7 +154,7 @@ _(General improvements to the quality of our positional tracking in a wider rang
 #### Why is my Litho slow to connect in the Unity Editor?
 
 * Macs have a buggy Bluetooth stack, so this connection issue is largely out of our hands. However, some suggesetions that may reduce problems are:
-    * Use the [Litho emulator](../Features/LithoEmulator.md) for general development - this will mean you don't need to test with Litho hardware as frequently
+    * Use the [Litho emulator](Features/LithoEmulator.md) for general development - this will mean you don't need to test with Litho hardware as frequently
     * Disconnect other Bluetooth devices such as headphones
     * Disconnect any USB-C adapters, as these can cause Bluetooth interference
     * Switch off WiFi and Handoff on Mac
@@ -194,7 +194,7 @@ _(Welcome to mobile AR!)_
 
 #### I have Unity build errors
 
-* Make sure to use the exact versions of software (Unity Editor, ARFoundation, ARKit, ARCore) specified in the [getting started instructions](ProjectSetupDetailed.md)
+* Make sure to use the exact versions of software (Unity Editor, ARFoundation, ARKit, ARCore) specified in the [getting started instructions](Manual/ProjectSetupDetailed.md)
 * Even small differences in version number can lead to build errors
 
 [_back to top_](#contents)
@@ -204,7 +204,7 @@ _(Welcome to mobile AR!)_
 * If it relates to 'bitcode', please disable bitcode in Xcode by going to your project’s Build Settings in Xcode, searching for bitcode, and setting the corresponding flag to 'False'
 * If it relates to architecture, please ensure that you have selected ARM64 architecture in Unity build settings
 * If it relates to signing, please read [this guide](https://developer.apple.com/support/code-signing/) on getting started with iOS code signing
-* If it relates to permissions, ensure you have [filled in a _Camera Usage Description_ in the Project Settings in Unity](ProjectSetupDetailed.md#3-prepare-your-project), then rebuild your project
+* If it relates to permissions, ensure you have [filled in a _Camera Usage Description_ in the Project Settings in Unity](Manual/ProjectSetupDetailed.md#3-prepare-your-project), then rebuild your project
 
 [_back to top_](#contents)
 
@@ -251,24 +251,26 @@ Please email support@litho.cc and someone from the Litho team will get back to y
 
 # Navigation
 
-[Litho Features](../Features/README.md)
+[Home](README.md)
 
-[Guide to using Litho](UsingLitho.md)
+[Litho Features](Features/README.md)
 
-[Set up your Litho project](ProjectSetup.md)
+[Guide to using Litho](Manual/UsingLitho.md)
 
-[Learn how the Litho demo scene works](DemoScene.md)
+[Set up your Litho project](Manual/ProjectSetup.md)
 
-[Build your scene for iOS or Android](BuildInstructions.md)
+[Learn how the Litho demo scene works](Manual/DemoScene.md)
 
-[Integrate Litho into your Unity scene](UnityIntegration.md)
+[Build your scene for iOS or Android](Manual/BuildInstructions.md)
 
-[Code your own Litho scripts](UnityScripting.md)
+[Integrate Litho into your Unity scene](Manual/UnityIntegration.md)
 
-[Test your scene using the Litho Emulator](../Features/LithoEmulator.md)
+[Code your own Litho scripts](Manual/UnityScripting.md)
 
-[FAQs & Troubleshooting](FAQ.md)
+[Test your scene using the Litho Emulator](Features/LithoEmulator.md)
 
-[Changelog](../Changelog.md)
+\> [FAQs & Troubleshooting](FAQ.md)
+
+[Changelog](Changelog.md)
 
 ---

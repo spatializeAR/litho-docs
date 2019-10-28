@@ -1,7 +1,7 @@
 # Set up your Litho project manually
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.2 (16/10/2019)_
+_Litho beta release 0.4.3 (28/10/2019)_
 
 ## Contents
 
@@ -93,6 +93,8 @@ Note that parts of this process can be automated using the condensed instruction
 
 # Navigation
 
+[Home](../README.md)
+
 [Litho Features](../Features/README.md)
 
 [Guide to using Litho](UsingLitho.md)
@@ -109,7 +111,7 @@ Note that parts of this process can be automated using the condensed instruction
 
 [Test your scene using the Litho Emulator](../Features/LithoEmulator.md)
 
-[FAQs & Troubleshooting](FAQ.md)
+[FAQs & Troubleshooting](../FAQ.md)
 
 [Changelog](../Changelog.md)
 
