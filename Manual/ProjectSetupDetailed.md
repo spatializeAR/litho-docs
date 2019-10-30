@@ -1,7 +1,7 @@
 # Set up your Litho project manually
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.3 (28/10/2019)_
+_Litho beta release 0.4.4 (30/10/2019)_
 
 ## Contents
 
@@ -26,7 +26,7 @@ Note that parts of this process can be automated using the condensed instruction
 #### 1. Create your project:
 
 1. Open **Unity Hub**
-2. Ensure you have **Unity version 2019.1** installed; in Unity Hub, go to _Installs_ and either find the required version, or click _Add_ to install  it. Alternatively, you can download different versions of Unity [here](https://unity3d.com/get-unity/download/archive) 
+2. Ensure you have **Unity version 2019.2** installed; in Unity Hub, go to _Installs_ and either find the required version, or click _Add_ to install  it. Alternatively, you can download different versions of Unity [here](https://unity3d.com/get-unity/download/archive) 
     - _Other Unity versions may work but are not yet tested_
     - _Alpha and beta versions are not recommended_ 
     - _Older versions are unlikely to support the required AR Unity packages_
@@ -34,7 +34,7 @@ Note that parts of this process can be automated using the condensed instruction
     - _If not installed, the additional options menu (three dots next to the chosen Unity version on the Installs tab) should allow you to install it via the _Add Modules_ option_
     [![ios support](../Images/Editor/iOSSupport.png)](#)
     [![android support](../Images/Editor/AndroidSupport.png)](#)
-4. On the Projects screen, use the dropdown menu next to the _New_ button to create a **new 3D project** with Unity **2019.1**, then open it.
+4. On the Projects screen, use the dropdown menu next to the _New_ button to create a **new 3D project** with Unity **2019.2**, then open it.
 [![Create a new project](../Images/Editor/CreateNewProject.png)](#)
 
 ---

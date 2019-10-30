@@ -1,10 +1,11 @@
 # Litho SDK Changelog
 
 [![Banner image](Images/banner.jpg)](#)
-_Litho beta release 0.4.3 (28/10/2019)_
+_Litho beta release 0.4.4 (30/10/2019)_
 
 ## Contents
 
+* [0.4.4](#044) | *30/10/2019*
 * [0.4.3](#043) | *28/10/2019*
 * [0.4.2](#042) | *16/10/2019*
 * [0.4.1](#041) | *30/09/2019*
@@ -14,6 +15,10 @@ _Litho beta release 0.4.3 (28/10/2019)_
 * [0.2.1](#021) | *22/07/2019*
 * [0.2.0](#020) | *05/07/2019*
 * [0.1.0](#010) | *17/06/2019*
+
+#### 0.4.4
+
+* Add alpha support for Windows BluetoothLE connection
 
 #### 0.4.3
 
