@@ -1,7 +1,7 @@
 # Set up your Litho project manually
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.4 (30/10/2019)_
+_Litho beta release 0.5.0 (13/11/2019)_
 
 ## Contents
 
@@ -95,9 +95,9 @@ Note that parts of this process can be automated using the condensed instruction
 
 [Home](../README.md)
 
-[Litho Features](../Features/README.md)
+[Wearing and using Litho (external link)](https://www.litho.cc/pages/using-litho)
 
-[Guide to using Litho](UsingLitho.md)
+[Litho Features](../Features/README.md)
 
 [Set up your Litho project](ProjectSetup.md)
 

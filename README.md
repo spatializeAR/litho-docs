@@ -1,9 +1,10 @@
-# Meet Litho
+# Litho SDK Documentation
 
-[![Banner image](Images/banner.jpg)](#)
-_Litho beta release 0.4.4 (30/10/2019)_
+_Litho beta release 0.5.0 (13/11/2019)_
 
 **To download the latest package please login to the [Litho Hub](https://developer.litho.cc/page/download-sdk/4).**
+
+[**Guide to wearing and using your Litho controller**](https://www.litho.cc/pages/using-litho).
 
 When you purchase a LITHO your login details will be sent to the purchase email you provide within 24hrs. If you haven't purchased a LITHO yet, you can buy one [here](https://www.litho.cc/buy)!
 
@@ -30,9 +31,9 @@ To quickly get started with SDK watch this [video](https://vimeo.com/368558994).
 
 \> [Home](README.md)
 
-[Litho Features](Features/README.md)
+[Wearing and using Litho (external link)](https://www.litho.cc/pages/using-litho)
 
-[Guide to using Litho](Manual/UsingLitho.md)
+[Litho Features](Features/README.md)
 
 [Set up your Litho project](Manual/ProjectSetup.md)
 

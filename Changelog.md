@@ -1,10 +1,11 @@
 # Litho SDK Changelog
 
 [![Banner image](Images/banner.jpg)](#)
-_Litho beta release 0.4.4 (30/10/2019)_
+_Litho beta release 0.5.0 (13/11/2019)_
 
 ## Contents
 
+* [0.5.0](#050) | *13/11/2019*
 * [0.4.4](#044) | *30/10/2019*
 * [0.4.3](#043) | *28/10/2019*
 * [0.4.2](#042) | *16/10/2019*
@@ -15,6 +16,13 @@ _Litho beta release 0.4.4 (30/10/2019)_
 * [0.2.1](#021) | *22/07/2019*
 * [0.2.0](#020) | *05/07/2019*
 * [0.1.0](#010) | *17/06/2019*
+
+#### 0.5.0
+
+* Stabilise AR ground plane
+* Implement AR scaling
+* Revamp showcase
+* Add scene switcher
 
 #### 0.4.4
 
@@ -86,9 +94,9 @@ _Litho beta release 0.4.4 (30/10/2019)_
 
 [Home](README.md)
 
-[Litho Features](Features/README.md)
+[Wearing and using Litho (external link)](https://www.litho.cc/pages/using-litho)
 
-[Guide to using Litho](Manual/UsingLitho.md)
+[Litho Features](Features/README.md)
 
 [Set up your Litho project](Manual/ProjectSetup.md)
 

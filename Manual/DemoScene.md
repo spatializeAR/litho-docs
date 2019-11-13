@@ -1,13 +1,12 @@
 # Learn how the Litho demo scene works
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.4 (30/10/2019)_
+_Litho beta release 0.5.0 (13/11/2019)_
 
 ## Contents
 
 * [Video Tutorial](#video-tutorial)
-* [Instructions for the Litho Showcase Scene](#instructions-for-the-litho-showcase-scene)
-* [Litho Showcase Scene Overview](#litho-showcase-scene-overview)
+* [Instructions for the Litho Showcase Scene](#instructions-for-using-litho-in-the-unity-editor)
 
 ---
 
@@ -19,9 +18,11 @@ Watch the setup tutorial on Vimeo</a>
 
 ---
 
-## Instructions for the Litho showcase scene
+## Instructions for using Litho in the Unity Editor
 
-1. **Open the showcase scene** (_/Litho/Scenes/LithoShowcase.unity_)
+> For more detailed information about the Litho showcase scene, see [here](UnityIntegration.md).
+
+1. **Open the showcase scene** (_/Packages/Litho Beta SDK/Demo/LithoShowcase/LithoShowcase.unity_)
 
 2. **Press _Play_** to run the scene (the _Play_ button should remain depressed and glow blue)
 
@@ -56,24 +57,13 @@ Watch the setup tutorial on Vimeo</a>
 
 ---
 
-
-## Litho showcase scene overview
-
->More detailed information is available [here](UnityIntegration.md#).
-
-| Description | Unity Editor |
-| :--- | :--- |
-|<ol> <li> **LithoCanvas** \- contains a hierarchy of UI components and a _UIManager_ that interact with the components that control UI for device selection, device info, and calibration </li> <li> **ARSessionOrigin** \- contains a custom Litho _WorldInterpreter_ script that handles basic plane identification and ground plane management, as well as the default session management components for an AR Foundation scene (see [AR Foundation](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.0/manual/index.html)) </li> <li> **ARCamera** \- has default AR Foundation camera management components on it, including the _Tracked Pose Driver_, which allows the Unity game camera position to match the real world camera position once the app is built </li> <li> **Litho** \- gets positioned by its _Litho_ component and exposes Litho-related events; also hosts a [`Pointer`](UnityScripting.md#pointer) script which handles interaction with GameObjects hosting the [`Manipulable`](UnityScripting.md#manipulable) component </li> <li> **LithoEventHelper** \- hosts an instance of the _LithoGlobalEventLogger_ component, which demonstrates how to subscribe to global Litho events (exposed by the _Litho_ object) - feel free to delete this object if you already understand Litho global events </li> <li> **Floor** \- gets positioned at the detected ground level by the _WorldInterpreter_ component on the _ARSessionOrigin_ object </li> <li> **Demo Objects** \- several objects that are Manipulable by the Litho [`Pointer`](UnityScripting.md#pointer) in a variety of ways - remove, replace, or modify these objects to develop your Litho app! </li> </ol> | [![Scene overview](../Images/Editor/ShowcaseSceneOverview.png)](#) |
-
----
-
 # Navigation
 
 [Home](../README.md)
 
-[Litho Features](../Features/README.md)
+[Wearing and using Litho (external link)](https://www.litho.cc/pages/using-litho)
 
-[Guide to using Litho](UsingLitho.md)
+[Litho Features](../Features/README.md)
 
 [Set up your Litho project](ProjectSetup.md)
 

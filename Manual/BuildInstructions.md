@@ -1,12 +1,12 @@
 # Build your scene for iOS using Xcode or directly for Android
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.4.4 (30/10/2019)_
+_Litho beta release 0.5.0 (13/11/2019)_
 
 ## Contents
 
 * [Build your Unity project as an iOS app](#build-your-unity-project-as-an-ios-app)
-* [Running the demo scene](#running-the-demo-scene)
+* [Running the demo](#running-the-demo)
 
 ---
 
@@ -14,7 +14,7 @@ _Litho beta release 0.4.4 (30/10/2019)_
 
 > Note: Xcode build for iOS is only available on Mac
 
-1. Open _/Packages/Litho Beta SDK/Demo/Scenes/LithoShowcase.unity_ in the Unity Editor
+1. Open _/Packages/Litho Beta SDK/Demo/LithoShowcase/LithoShowcase.unity_ in the Unity Editor
 
 2. Open Build Settings (_File -> Build Settings..._)
 
@@ -42,7 +42,7 @@ _Litho beta release 0.4.4 (30/10/2019)_
 
 ---
 
-## Running the demo scene
+## Running the demo
 
 1. Run the app ensuring that you grant it access to the device camera and location when prompted
 2. The built app can be interacted with in a similar manner to how you used the Game view in the Unity Editor, noting the following additional points:
@@ -60,9 +60,9 @@ If you have used additional libraries, you may need to modify build settings to 
 
 [Home](../README.md)
 
-[Litho Features](../Features/README.md)
+[Wearing and using Litho (external link)](https://www.litho.cc/pages/using-litho)
 
-[Guide to using Litho](UsingLitho.md)
+[Litho Features](../Features/README.md)
 
 [Set up your Litho project](ProjectSetup.md)
 
