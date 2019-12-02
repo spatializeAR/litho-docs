@@ -1,7 +1,7 @@
 # Build your scene for iOS using Xcode or directly for Android
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.5.0 (13/11/2019)_
+_Litho beta release 0.5.1 (02/12/2019)_
 
 ## Contents
 

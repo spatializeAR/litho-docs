@@ -1,6 +1,6 @@
 # Litho SDK Documentation
 
-_Litho beta release 0.5.0 (13/11/2019)_
+_Litho beta release 0.5.1 (02/12/2019)_
 
 **To download the latest package please login to the [Litho Hub](https://developer.litho.cc/page/download-sdk/4).**
 
@@ -20,9 +20,9 @@ To quickly get started with SDK watch this [video](https://vimeo.com/368558994).
 # Required software & hardware
 | | | |
 | :--- | :--- | :--- |
- |[![Litho](Images/Icons/litho.png)](#) **Litho Device**| [![iOS](Images/Icons/ios.png)](#) **iPhone with iOS 12**| [![Android](Images/Icons/Android.png)](#) **Android 7+ <span style="color:red">*(experimental)*</span>** |
-| You need a Litho device running the latest firmware. If you don't have a Litho you can purchase one [here](https://www.litho.cc/buy). | Litho uses Apple's ARKit 2.0 and is supported on iOS devices running at version 12.2 or higher.| Litho uses Google’s AR Core and is supported on Android 7 or above, have a look [here](https://developers.google.com/ar/discover/supported-devices) for a more detailed list with devices.  |
-|[![Unity](Images/Icons/unity.png)](#) **Unity 2019.2**|[![MacOS 10.14+](Images/Icons/macos.png)](#)**MacOS 10.14+** | [![Windows](Images/Icons/windows.png)](#) **Windows <span style="color:red">*(experimental)*</span>**| 
+ | [![Litho](Images/Icons/litho.png)](#) **Litho Device**| [![iOS](Images/Icons/ios.png)](#) **iPhone with iOS 12** | [![Android](Images/Icons/Android.png)](#) **Android 7+** |
+| You need a Litho device running the latest firmware. If you don't have a Litho you can purchase one [here](https://www.litho.cc/buy). | Litho uses Apple's ARKit 2.0 and is supported on iOS devices running at version 12.2 or higher.| Litho uses Google’s AR Core and is supported on Android 7 or above, see [here](https://developers.google.com/ar/discover/supported-devices) for a more detailed list with devices.  |
+|[![Unity](Images/Icons/unity.png)](#) **Unity 2019.2**|[![MacOS 10.14+](Images/Icons/macos.png)](#)**MacOS 10.14+** | [![Windows](Images/Icons/windows.png)](#) **Windows _([alpha](Alpha/README.md))_**| 
 |Litho is currently tested on Unity 2019.2, which can be downloaded [here.](https://unity3d.com/get-unity/download/archive) | Developing with Litho is currently only supported on MacOS, with Xcode version 10.2 and above.| On Windows, [Bluetooth support](Alpha/Windows.md) is [alpha-quality](Alpha/README.md). However, it is possible to develop and build your projects using the [Litho emulator](Features/LithoEmulator.md) in the Unity Editor.|
 
 ---

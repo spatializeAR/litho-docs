@@ -1,7 +1,7 @@
 # Set up your Litho project
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.5.0 (13/11/2019)_
+_Litho beta release 0.5.1 (02/12/2019)_
 
 ## Contents
 
@@ -40,14 +40,16 @@ Watch the setup tutorial on Vimeo</a>
 
 #### 2. Import the Litho Unity package into your Unity project:
 
-1. Locate the Litho SDK _.zip_ file (e.g. _litho-beta-2019-10-16-v0-4-2.zip_) - i.e. find it in your downloads folder, or download it if you have not done so already
-2. Unzip/ decompress the Litho SDK _.zip_ file
-3. Using Mac's Finder app or Windows Explore (in a new window), open the root folder of the Unity project you created for Litho
-4. Drag and drop the unzipped Litho package (e.g. _Litho_ or _litho-beta-2019-10-16-v0-4-2_; note **not** _.zip_) into the _Packages_ folder of your Unity project
-5. If you are upgrading your Litho SDK package from a previous version, you can now delete the old version (however Unity should automatically use the latest version)
-6. Return to your project in Unity - Unity will automatically install the Litho assets into your project; these assets can be found in the Unity _Project_ window, under _Litho Beta SDK_
+1. **Locate the Litho SDK _.zip_ file** (e.g. _litho-beta-2019-10-16-v0-4-2.zip_) - i.e. find it in your downloads folder, or download it if you have not done so already
+2. **Unzip/ decompress** the Litho SDK _.zip_ file
+3. Using Mac's Finder app or Windows Explore (in a new window), **open the root folder of the Unity project** you created for Litho
+4. **Drag and drop** the unzipped Litho package **into the _Packages_ folder** of your Unity project
 
 [![Add package from disk](../Images/Editor/DropLithoPackageIntoPackages.png)](#)
+
+5. If you are upgrading your Litho SDK package from a previous version, you can now delete the old version (however Unity should automatically use the latest version)
+6. **Return to your project in Unity** - Unity will automatically install the Litho assets into your project; these assets can be found in the Unity _Project_ window, under _Litho Beta SDK_
+7. If you are using **OSX Catalina**, you may be prompted with a security notice, similar to the one pictured below. If this happens, you will need go to **_System Preferences -> Security & Privacy -> Allow apps..._** and specify that the Litho SDK is permitted to run on your computer. [![Add package from disk](../Images/Editor/CatalinaPluginSecurityMessage.png)](#)
 
 ---
 

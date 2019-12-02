@@ -1,7 +1,7 @@
 # Alpha Quality
 
 [![Banner image](../Images/banner.jpg)](#)
-_Litho beta release 0.5.0 (13/11/2019)_
+_Litho beta release 0.5.1 (02/12/2019)_
 
 ---
 
@@ -20,6 +20,10 @@ When using alpha features, you may experience missing functionality, crashes, or
 You should not depend on alpha features for any high-value or important projects. Whilst we will aim to support people and projects using these features, some issues encountered may be more challenging or time-consuming to fix.
 
 Please post any feedback or issues in the [Developer Forums](https://developer.litho.cc/c/sdk-general).
+
+### List of Alpha Features
+
+- [Windows BLE Support](Windows.md)
 
 ---
 
